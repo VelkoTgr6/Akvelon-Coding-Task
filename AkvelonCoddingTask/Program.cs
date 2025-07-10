@@ -9,7 +9,7 @@ namespace AkvelonCoddingTask
         {
             FizzBuzzService fizzBuzzService = new FizzBuzzService(new FizzBuzzDetector());
 
-            Console.WriteLine("Enter Input");
+            Console.WriteLine("Enter Input:");
 
             string input = Console.ReadLine();
 

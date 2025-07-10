@@ -1,5 +1,4 @@
 ﻿using AkvelonCoddingTask.Models;
-using System.Text.RegularExpressions;
 
 namespace AkvelonCoddingTask.Detector
 {
