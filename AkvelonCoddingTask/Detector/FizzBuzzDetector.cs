@@ -2,8 +2,17 @@
 
 namespace AkvelonCoddingTask.Detector
 {
+    /// <summary>
+    /// Provides FizzBuzz detection and transformation logic.
+    /// </summary>
     public class FizzBuzzDetector : IFizzBuzzDetector
     {
+        /// <summary>
+        /// Processes the input string and replaces every 3rd, 5th, and 15th alphanumeric word with Fizz, Buzz, or FizzBuzz respectively.
+        /// </summary>
+        /// <param name="input">The input string to process.</param>
+        /// <returns>A <see cref="FizzBuzzResult"/> containing the processed output and the count of replacements.</returns>
+        /// <exception cref="ArgumentException">Thrown if input is null, empty, or not within the required length.</exception>
         public FizzBuzzResult GetOverlappings(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
@@ -44,7 +53,7 @@ namespace AkvelonCoddingTask.Detector
                 }
             }
 
-            var result = new FizzBuzzResult()
+            var result = new FizzBuzzResult
             {
                 Output = string.Join(" ", inputArr),
                 Count = count

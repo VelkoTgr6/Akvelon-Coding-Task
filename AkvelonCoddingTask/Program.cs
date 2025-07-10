@@ -3,11 +3,18 @@ using AkvelonCoddingTask.Services;
 
 namespace AkvelonCoddingTask
 {
+    /// <summary>
+    /// Entry point for the FizzBuzz application.
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Main method. Reads input, processes FizzBuzz, and prints the result.
+        /// </summary>
+        /// <param name="args">Command-line arguments.</param>
         static void Main(string[] args)
         {
-            FizzBuzzService fizzBuzzService = new FizzBuzzService(new FizzBuzzDetector());
+            var fizzBuzzService = new FizzBuzzService(new FizzBuzzDetector());
 
             Console.WriteLine("Enter Input:");
 
