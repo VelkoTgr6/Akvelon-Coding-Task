@@ -1,4 +1,5 @@
-﻿using AkvelonCoddingTask.Models;
+﻿using AkvelonCoddingTask.Detector;
+using AkvelonCoddingTask.Models;
 
 namespace AkvelonCoddingTask.Services
 {
@@ -17,7 +18,7 @@ namespace AkvelonCoddingTask.Services
             {
                 throw new ArgumentException("Input cannot be null or empty", nameof(input));
             }
-            return fizzBuzzDetector.getOverlappings(input);
+            return fizzBuzzDetector.GetOverlappings(input);
         }
     }
 }
