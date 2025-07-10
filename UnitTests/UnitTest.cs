@@ -1,12 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using NUnit.Framework;
 
 namespace UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTest
     {
-        [TestMethod]
+
+        
+        [SetUp]
         public void TestMethod1()
         {
         }
