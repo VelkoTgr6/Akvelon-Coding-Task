@@ -1,18 +1,22 @@
-﻿using AkvelonCoddingTask.Services;
+﻿using AkvelonCoddingTask.Detector;
+using AkvelonCoddingTask.Services;
 
 namespace AkvelonCoddingTask
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             FizzBuzzService fizzBuzzService = new FizzBuzzService(new FizzBuzzDetector());
-            Console.WriteLine("Enter a space-separated list of numbers:");
+
+            Console.WriteLine("Enter Input");
+
             string input = Console.ReadLine();
+
             try
             {
                 var result = fizzBuzzService.GetOverlappings(input);
-                Console.WriteLine("Result: " + result);
+                Console.WriteLine($"output string: \n{result.Output}\n \ncount: {result.Count}");
             }
             catch (ArgumentException ex)
             {
