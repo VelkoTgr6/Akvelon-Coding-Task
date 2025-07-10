@@ -2,6 +2,7 @@
 {
     public class FizzBuzzResult
     {
-        string result = string.Empty;
+        public string Output = string.Empty;
+        public int Count = 0;
     }
 }
