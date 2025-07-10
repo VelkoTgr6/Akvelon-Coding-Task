@@ -16,7 +16,8 @@ A .NET 8 console application that processes a string input and applies FizzBuzz 
 ### Build and Run
 1. Clone the repository:
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/VelkoTgr6/Akvelon-Coding-Task
+
    cd AkvelonCoddingTask
    ```
 2. Build the solution:
